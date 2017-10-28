@@ -10,12 +10,13 @@ module.exports = function(grunt) {
 
   //Configuration of Plugin's
   grunt.initConfig({
-    scss:{
+    sass:{
       dist:{
         files:[{
+          expand:true,
           cwd:'scss',
-          src:'*.scss',
-          dest:'../release/css',
+          src:['*.scss'],
+          dest:'release/css',
           ext:'.css'
         }]
       }
@@ -45,13 +46,13 @@ module.exports = function(grunt) {
       all: ['Gruntfile.js', 'js/*.js']
     },
     watch:{
-      a:{
+      style:{
         files:['scss/*.scss' ],
-        task:['scss']
+        tasks:['sass']
       },
-      b:{
+      script:{
         files:['js/*.js' ],
-        task:['jshint']
+        tasks:['jshint']
       },
       options:{
         spawn:false
@@ -61,5 +62,5 @@ module.exports = function(grunt) {
 
   //Defining Task's
   grunt.registerTask('default', ['watch']);
-  grunt.registerTask('build', []);
+  grunt.registerTask('build', ['cssmin','uglify']);
 };

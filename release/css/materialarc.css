@@ -1,0 +1,731 @@
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+progress {
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+a:active,
+a:hover {
+  outline-width: 0; }
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #FBC02D;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+figure {
+  margin: 1em 40px; }
+
+img {
+  border-style: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  margin: 0; }
+
+optgroup {
+  font-weight: bold; }
+
+button,
+input {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  border: 1px solid #9E9E9E;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal; }
+
+textarea {
+  overflow: auto; }
+
+[type=checkbox],
+[type=radio] {
+  padding: 0; }
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px; }
+
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit; }
+
+/*
+  Grid System Using susy
+*/
+.row {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .row:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.col {
+  margin-bottom: 5%; }
+
+/* for small screen devices*/
+@media only screen and (max-width: 700px) {
+  .s1 {
+    width: 6.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s2 {
+    width: 15%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s3 {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s4 {
+    width: 31.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s5 {
+    width: 40%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s6 {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s7 {
+    width: 56.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s8 {
+    width: 65%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s9 {
+    width: 73.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s10 {
+    width: 81.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .s11 {
+    width: 90%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+/*system for medium screen devices*/
+@media only screen and (min-width: 701px) and (max-width: 1199px) {
+  .m1 {
+    width: 6.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m2 {
+    width: 15%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m3 {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m4 {
+    width: 31.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m5 {
+    width: 40%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m6 {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m7 {
+    width: 56.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m8 {
+    width: 65%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m9 {
+    width: 73.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m10 {
+    width: 81.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .m11 {
+    width: 90%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+/*Grid system for large screen devices*/
+@media only screen and (min-width: 1200px) {
+  .l1 {
+    width: 6.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l2 {
+    width: 15%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l3 {
+    width: 23.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l4 {
+    width: 31.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l5 {
+    width: 40%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l6 {
+    width: 48.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l7 {
+    width: 56.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l8 {
+    width: 65%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l9 {
+    width: 73.33333%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l10 {
+    width: 81.66667%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; }
+
+  .l11 {
+    width: 90%;
+    float: left;
+    margin-left: 0.83333%;
+    margin-right: 0.83333%; } }
+form {
+  padding: 10px; }
+
+/*
+  Input / input-group styling
+*/
+.input-group {
+  display: flex;
+  align: baseline;
+  position: relative;
+  margin: 16px;
+  font-family: 'Roboto', sans-serif; }
+
+input[type="text"], input[type="password"] {
+  line-height: 1.2em;
+  padding: 10px 0;
+  border-color: #999;
+  border-width: 0 0 1px 0;
+  width: 100%;
+  background-color: transparent; }
+
+/*Labe of input*/
+input[type="text"] ~ label, input[type="password"] ~ label {
+  font-size: 16px;
+  color: #999;
+  line-height: 1.2em;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  outline: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1); }
+
+/*Bar that shows down when input is focused*/
+.input-group .bar {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #512DA8;
+  display: none; }
+
+/*For preventing default lines when focused*/
+input:focus {
+  outline: none; }
+
+/*When input gain focus shift label up and resize*/
+input[type="text"].full ~ label, input[type="password"].full ~ label, input[type="text"]:focus ~ label, input[type="password"]:focus ~ label {
+  top: 0px;
+  font-size: 12px;
+  color: #512DA8;
+  font-weight: bold; }
+
+/*Bar animation when input focused*/
+@keyframes inputbarin {
+  0% {
+    left: 50%;
+    right: 50%;
+    width: 2%;
+    height: 3px; }
+  100% {
+    width: 100%; } }
+/*show bar andIncreasse bar length animation when input is focused*/
+input[type="text"]:focus ~ .bar, input[type="password"]:focus ~ .bar {
+  display: block;
+  animation: inputbarin 0.4s ease; }
+
+/*For Radio buttons */
+/*
+	hidding radio button since stylling is very hard.
+	so stylling using label. label contain inne div for inner circle and outer div for outer-circle.
+*/
+input[type="radio"] {
+  display: none; }
+
+/*Label of radio button*/
+input[type="radio"] + label {
+  margin-left: 0px;
+  cursor: pointer; }
+
+/*Div for:after Circel*/
+input[type="radio"] + label:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border: 2px solid black;
+  border-radius: 50%;
+  transition: all 0.3s linear; }
+
+/*Div for:before circle*/
+input[type="radio"] + label:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #512DA8;
+  width: 5px;
+  height: 5px;
+  border-radius: 15px;
+  opacity: 0;
+  transition: all 0.32s linear; }
+
+input[type="radio"]:not(:checked) + label:before:hover {
+  background-color: #2DA88E;
+  opacity: 1; }
+
+input[type="radio"]:not(:checked) + label:after:hover {
+  border-color: #2DA88E; }
+
+input[type=radio]:checked + label:after {
+  border-color: #512DA8; }
+
+/*Bouncing effect when radio button is checked*/
+@keyframes animInner {
+  0% {
+    width: 6px;
+    height: 6px; }
+  50% {
+    height: 10px;
+    width: 10px; }
+  70% {
+    height: 6px;
+    width: 6px; }
+  100% {
+    height: 10px;
+    width: 10px; } }
+input[type=radio]:checked + label:before {
+  opacity: 1;
+  animation: animInner 0.7s ease;
+  height: 8px;
+  width: 8px; }
+
+/*Style for checkbox*/
+/*Same concept as radio button hide the original checkboc create the new one using sudo elemenet before and after*/
+input[type="checkbox"] {
+  display: none; }
+
+/*lebel of checkbox*/
+input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  left: 0;
+  display: inline-block;
+  margin-right: 10px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid black;
+  border-radius: 6px;
+  transition: all 0.3s linear; }
+
+input[type="checkbox"] + label:after {
+  opacity: 0;
+  display: inline-block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s linear; }
+
+input[type="checkbox"]:checked + label:before {
+  border-color: #512DA8; }
+
+input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  top: -5px;
+  left: 4px;
+  width: 4px;
+  height: 7px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #512DA8;
+  border-bottom: 3px solid #512DA8;
+  transform: rotateZ(38deg);
+  border-radius: 0px; }
+
+input[type="checkbox"] + label:hover:before {
+  border-color: #512DA8; }
+
+input[type="checkbox"] + label:hover:after {
+  border-color: transparent #2DA88E #2DA88E transparent; }
+
+/*Background color classes*/
+.light-red {
+  background-color: #F44336; }
+
+.red {
+  background-color: #D32F2F; }
+
+.dark-red {
+  background-color: #B71C1C; }
+
+.light-pink {
+  background-color: #E91E63; }
+
+.pink {
+  background-color: #C2185B; }
+
+.dark-pink {
+  background-color: #880E4F; }
+
+.light-purple {
+  background-color: #9C27B0; }
+
+.purple {
+  background-color: #7B1FA2; }
+
+.dark-purple {
+  background-color: #4A148C; }
+
+.light-deep-purple {
+  background-color: #673AB7; }
+
+.deep-purple {
+  background-color: #512DA8; }
+
+.dark-deep-purple {
+  background-color: #311B92; }
+
+.light-indigo {
+  background-color: #3F51B5; }
+
+.indigo {
+  background-color: #303F9F; }
+
+.dark-indigo {
+  background-color: #1A237E; }
+
+.light-blue {
+  background-color: #2196F3; }
+
+.blue {
+  background-color: #1976D2; }
+
+.dark-blue {
+  background-color: #0D47A1; }
+
+.light-teal {
+  background-color: #009688; }
+
+.teal {
+  background-color: #00796B; }
+
+.dark-teal {
+  background-color: #004D40; }
+
+.light-green {
+  background-color: #4CAF50; }
+
+.green {
+  background-color: #388E3C; }
+
+.dark-green {
+  background-color: #1B5E20; }
+
+.light-lime {
+  background-color: #CDDC39; }
+
+.lime {
+  background-color: #AFB42B; }
+
+.dark-lime {
+  background-color: #827717; }
+
+.light-yellow {
+  background-color: #FFEB3B; }
+
+.yellow {
+  background-color: #FBC02D; }
+
+.dark-yellow {
+  background-color: #F57F17; }
+
+.light-amber {
+  background-color: #FFC107; }
+
+.amber {
+  background-color: #FFA000; }
+
+.dark-amber {
+  background-color: #FF6F00; }
+
+.light-orange {
+  background-color: #FF9800; }
+
+.orange {
+  background-color: #F57C00; }
+
+.dark-orange {
+  background-color: #E65100; }
+
+.light-brown {
+  background-color: #795548; }
+
+.brown {
+  background-color: #5D4037; }
+
+.dark-brown {
+  background-color: #3E2723; }
+
+.light-grey {
+  background-color: #9E9E9E; }
+
+.grey {
+  background-color: #616161; }
+
+.dark-grey {
+  background-color: #212121; }
+
+.light-blue-grey {
+  background-color: #607D8B; }
+
+.blue-grey {
+  background-color: #455A64; }
+
+.dark-blue-grey {
+  background-color: #263238; }
+
+.black {
+  background-color: #000000; }
+
+.white {
+  background-color: #ffffff; }
+
+.container {
+  widows: 95%;
+  margin: 5%; }
+
+/*# sourceMappingURL=materialarc.css.map */

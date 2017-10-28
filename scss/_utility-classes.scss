@@ -1,0 +1,13 @@
+
+/*Background color classes*/
+
+@each $name,$value in $colors{
+	.#{$name}{
+		background-color: $value;
+	}
+}
+
+.container{
+	widows: 95%;
+	margin: 5%;
+}

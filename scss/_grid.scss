@@ -1,0 +1,44 @@
+/*
+  Grid System Using susy
+*/
+@import "susy";
+
+$susy: (
+  columns: $columncount,  // The number of columns in your grid
+	gutter-position: split
+);
+
+.row{
+	@include container($columncount);
+}
+
+.col{
+	 margin-bottom: gutter(2);
+}
+
+//For drawing grid classes
+@mixin drawGrid($prefix)
+{
+	@for $i from 1 to $columncount
+	{
+		.#{$prefix}#{$i}
+		{
+			@include span($i of $columncount);
+		}
+	}
+}
+
+/* for small screen devices*/
+@media #{$breakpoint-small} {
+    @include drawGrid( 's');
+}
+
+/*system for medium screen devices*/
+@media #{$breakpoint-medium} {
+    @include drawGrid( 'm');
+}
+
+/*Grid system for large screen devices*/
+@media #{$breakpoint-large} {
+    @include drawGrid( 'l');
+}

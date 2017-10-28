@@ -1,0 +1,73 @@
+  // color pallete
+  // Color's are taken from google material design color pallete
+  // https://material.io/guidelines/style/color.html#color-color-palette
+  //
+  //
+  // light -> 500
+  // main -> 700
+  // dark -> 900
+
+  $colors:(
+      light-red: #F44336,
+      red: #D32F2F,
+      dark-red: #B71C1C,
+
+      light-pink: #E91E63,
+      pink: #C2185B,
+      dark-pink: #880E4F,
+
+      light-purple: #9C27B0,
+      purple: #7B1FA2,
+      dark-purple: #4A148C,
+
+      light-deep-purple: #673AB7,
+      deep-purple: #512DA8,
+      dark-deep-purple: #311B92,
+
+      light-indigo: #3F51B5,
+      indigo: #303F9F,
+      dark-indigo: #1A237E,
+
+      light-blue: #2196F3,
+      blue: #1976D2,
+      dark-blue: #0D47A1,
+
+      light-teal: #009688,
+      teal: #00796B,
+      dark-teal: #004D40,
+
+      light-green: #4CAF50,
+      green: #388E3C,
+      dark-green: #1B5E20,
+
+      light-lime: #CDDC39,
+      lime: #AFB42B,
+      dark-lime: #827717,
+
+      light-yellow: #FFEB3B,
+      yellow: #FBC02D,
+      dark-yellow:#F57F17,
+
+      light-amber: #FFC107,
+      amber: #FFA000,
+      dark-amber: #FF6F00,
+
+      light-orange: #FF9800,
+      orange: #F57C00,
+      dark-orange: #E65100,
+
+      light-brown: #795548,
+      brown: #5D4037,
+      dark-brown: #3E2723,
+
+      light-grey: #9E9E9E,
+      grey: #616161,
+      dark-grey: #212121,
+
+      light-blue-grey: #607D8B,
+      blue-grey: #455A64,
+      dark-blue-grey: #263238,
+
+      black: #000000,
+      white: #ffffff
+);

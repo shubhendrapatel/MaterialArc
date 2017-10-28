@@ -1,0 +1,16 @@
+//No of coloumns
+$columncount: 12;
+
+//Grid Breakpoints
+$breakpoint-small: "only screen and (max-width: 700px)";
+$breakpoint-medium: "only screen and (min-width:701px) and (max-width: 1199px)";
+$breakpoint-large: "only screen and (min-width: 1200px)";
+
+//Contexual Colors
+$primary : map-get($colors,deep-purple);
+$secondary : #2DA88E;
+
+$success: map-get($colors,green);
+$info: map-get($colors,blue);
+$warning: map-get($colors,amber);
+$danger:map-get($colors,red);
